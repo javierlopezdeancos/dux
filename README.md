@@ -15,7 +15,7 @@ Why not.
 ## Install
 
 ```
-npm i erre-ele--save
+npm i erre-ele --save
 ```
 
 ## Usage
