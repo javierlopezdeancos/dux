@@ -2,11 +2,11 @@
 A Typescript  browser  URL manager
 
 ## Activity
-[![License](https://img.shields.io/github/license/javierlopezdeancos/dux?style=flat-square)](LICENSE)
-![GitHub issues](https://img.shields.io/github/issues-raw/javierlopezdeancos/dux?style=flat)
-![GitHub all releases](https://img.shields.io/github/downloads/javierlopezdeancos/dux/total)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/javierlopezdeancos/dux/publish-erre-ele-in-npm-on-release)
-![npm](https://img.shields.io/npm/v/dux)
+[![License](https://img.shields.io/github/license/javierlopezdeancos/erre-ele?style=flat-square)](LICENSE)
+![GitHub issues](https://img.shields.io/github/issues-raw/javierlopezdeancos/erre-ele?style=flat)
+![GitHub all releases](https://img.shields.io/github/downloads/javierlopezdeancos/erre-ele/total)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/javierlopezdeancos/erre-ele/publish-erre-ele-in-npm-on-release)
+![npm](https://img.shields.io/npm/v/erre-ele)
 
 ## Why?
 
@@ -22,14 +22,14 @@ npm i erre-ele --save
 
 ### Import
 
-Import the Dux singleton instance:
+Import the ErreEle singleton instance:
 
 ```typescript
 import rl from 'erre-ele';
 ```
 
 ### Interface
-Review and use to your implementations how the IDux interface looks
+Review and use to your implementations how the IErreEle interface looks
 
 ```typescript
 export interface IErreEle<S> {
