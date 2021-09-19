@@ -32,7 +32,7 @@ import rl from 'erre-ele';
 Review and use to your implementations how the IDux interface looks
 
 ```typescript
-export interface IDux<S> {
+export interface IErreEle<S> {
   getParamFromURL: (pn: string) => string | null;
   getPathnameFromURL: () => string | null;
   go: (p: string, t?: string, s?: S) => void;
