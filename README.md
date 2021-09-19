@@ -1,4 +1,4 @@
-# Dux
+# Erre Ele
 A Typescript  browser  URL manager
 
 ## Activity
@@ -15,7 +15,7 @@ Why not.
 ## Install
 
 ```
-npm i dux --save
+npm i erre-ele--save
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm i dux --save
 Import the Dux singleton instance:
 
 ```typescript
-import dux from 'dux';
+import rl from 'erre-ele';
 ```
 
 ### Interface
@@ -62,7 +62,7 @@ export interface IDux<S> {
 ```typescript
 // Browser URL "https://example.com/?foo=bar"
 
-import dux from 'dux';
+import rl from 'erre-ele';
 
-const fooValue = dux.getParamFromURL('foo');  // bar
+const fooValue = rl.getParamFromURL('foo');  // bar
 ```

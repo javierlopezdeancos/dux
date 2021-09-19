@@ -1,4 +1,4 @@
-name: publish-dux-in-npm-on-release
+name: publish-erre-ele-in-npm-on-release
 
 on:
   release:

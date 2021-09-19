@@ -1,4 +1,4 @@
-export interface IDux<S> {
+export interface IErreEle<S> {
   getParamFromURL: (pn: string) => string | null;
   getPathnameFromURL: () => string | null;
   go: (p: string, t?: string, s?: S) => void;
@@ -7,7 +7,7 @@ export interface IDux<S> {
   getParam: (key: string) => void;
 }
 
-export class Dux<S> implements IDux<S> {
+export class ErreEle<S> implements IErreEle<S> {
   private _pathname: string;
 
   private _origin: string;
@@ -92,4 +92,4 @@ export class Dux<S> implements IDux<S> {
   }
 }
 
-export default new Dux();
+export default new ErreEle();

@@ -1,4 +1,4 @@
-export interface IDux<S> {
+export interface IErreEle<S> {
     getParamFromURL: (pn: string) => string | null;
     getPathnameFromURL: () => string | null;
     go: (p: string, t?: string, s?: S) => void;
@@ -6,7 +6,7 @@ export interface IDux<S> {
     setParam: (key: string, value: string) => void;
     getParam: (key: string) => void;
 }
-export declare class Dux<S> implements IDux<S> {
+export declare class ErreEle<S> implements IErreEle<S> {
     private onPopState?;
     private _pathname;
     private _origin;
@@ -27,5 +27,5 @@ export declare class Dux<S> implements IDux<S> {
     getPathnameFromURL(): string;
     setOnPopState(onPopState?: (evt: PopStateEvent) => void): void;
 }
-declare const _default: Dux<unknown>;
+declare const _default: ErreEle<unknown>;
 export default _default;

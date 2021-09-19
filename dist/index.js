@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Dux = void 0;
-class Dux {
+exports.ErreEle = void 0;
+class ErreEle {
     constructor(onPopState) {
         var _a;
         this.onPopState = onPopState;
@@ -66,6 +66,6 @@ class Dux {
         this.subscribeOnPopState(this.onPopState);
     }
 }
-exports.Dux = Dux;
-exports.default = new Dux();
+exports.ErreEle = ErreEle;
+exports.default = new ErreEle();
 //# sourceMappingURL=index.js.map
