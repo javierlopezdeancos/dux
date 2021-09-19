@@ -65,4 +65,4 @@ export interface IDux<S> {
 import dux from 'dux';
 
 const fooValue = dux.getParamFromURL('foo');  // bar
-``
+```
