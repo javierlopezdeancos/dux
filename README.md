@@ -5,7 +5,7 @@ A Typescript  browser  URL manager
 [![License](https://img.shields.io/github/license/javierlopezdeancos/dux?style=flat-square)](LICENSE)
 ![GitHub issues](https://img.shields.io/github/issues-raw/javierlopezdeancos/dux?style=flat)
 ![GitHub all releases](https://img.shields.io/github/downloads/javierlopezdeancos/dux/total)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/javierlopezdeancos/dux/publish-dux-in-npm-on-release)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/javierlopezdeancos/dux/publish-erre-ele-in-npm-on-release)
 ![npm](https://img.shields.io/npm/v/dux)
 
 ## Why?
