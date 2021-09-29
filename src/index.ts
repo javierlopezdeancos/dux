@@ -73,12 +73,12 @@ export class ErreEle<S> implements IErreEle<S> {
   }
 
   public setParamsFromURL(): void {
-    const params = new URL(document.location.href).searchParams;
+    const params: URLSearchParams = new URLSearchParams(document.location.href);
 
     if (params) {
-      for (const [key, value] of params.entries()) {
+      params.forEach((value: string, key: string) => {
         this._params.set(key, value);
-      }
+      })
     }
   }
 
