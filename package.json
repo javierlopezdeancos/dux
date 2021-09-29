@@ -1,10 +1,11 @@
 {
   "name": "erre-ele",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "files": [
-    "/dist"
+    "/lib"
   ],
   "type": "module",
   "jest": {
@@ -19,7 +20,9 @@
     ]
   },
   "scripts": {
-    "build": "npx tsc",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "test": "jest",
     "test:watch": "jest --watch"
   },
