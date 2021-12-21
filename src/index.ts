@@ -3,6 +3,7 @@ export interface IErreEle<S> {
   getPathnameFromURL: () => string | null;
   go: (p: string, t?: string, s?: S) => void;
   subscribeOnPopState: (onPopState?: (e: PopStateEvent) => void) => void;
+  unSubscribeOnPopState: () => void;
   setParam: (key: string, value: string) => void;
   getParam: (key: string) => void;
 }
@@ -22,11 +23,17 @@ export class ErreEle<S> implements IErreEle<S> {
   }
 
   public subscribeOnPopState(onPopState?: (e: PopStateEvent) => void): void {
-    window.onpopstate = function (event: PopStateEvent) {
+    window.addEventListener('popstate', (event: PopStateEvent) => {
       if (onPopState) {
         onPopState(event);
       }
-    };
+    });
+  }
+
+  public unSubscribeOnPopState(): void {
+    if (this.onPopState) {
+      window.removeEventListener('popstate', this.onPopState);
+    }
   }
 
   public go(p: string, t = '', s = {}): void {
