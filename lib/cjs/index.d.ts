@@ -3,6 +3,7 @@ export interface IErreEle<S> {
     getPathnameFromURL: () => string | null;
     go: (p: string, t?: string, s?: S) => void;
     subscribeOnPopState: (onPopState?: (e: PopStateEvent) => void) => void;
+    unSubscribeOnPopState: () => void;
     setParam: (key: string, value: string) => void;
     getParam: (key: string) => void;
 }
@@ -13,6 +14,7 @@ export declare class ErreEle<S> implements IErreEle<S> {
     private _params;
     constructor(onPopState?: ((e: PopStateEvent) => void) | undefined);
     subscribeOnPopState(onPopState?: (e: PopStateEvent) => void): void;
+    unSubscribeOnPopState(): void;
     go(p: string, t?: string, s?: {}): void;
     get pathname(): string;
     set pathname(p: string);
