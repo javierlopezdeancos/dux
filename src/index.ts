@@ -31,7 +31,7 @@ export class ErreEle<S> implements IErreEle<S> {
 
   public go(p: string, t = '', s = {}): void {
     window.history.pushState(s, t, p);
-    this._pathname = '/' + p;
+    this._pathname = p;
   }
 
   public get pathname(): string {
